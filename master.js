@@ -7,7 +7,7 @@ let main_color = localStorage.getItem("color_option");
 let ourGallary =document.querySelectorAll('.gallary img');
 
 
-landingPage.style.backgroundImage = 'url("13.jpg")';
+
 
 document.querySelector('.toggle-setting .fa-solid').onclick = function(){
     this.classList.toggle("fa-spin");
@@ -61,24 +61,6 @@ allSkills.forEach(skills =>{
 }
 get();*/
 
-ourGallary.forEach(img =>{
-
-    img.addEventListener('click',(e) =>{
-        let overLay = document.createElement('div');
-        overLay.className = 'popup-overlay';
-
-        document.body.appendChild(overLay);
-
-        let popupBox = document.createElement('div');
-        popupBox.className='popup-box';
-
-        let popupImage = document.createElement('img');
-        popupImage.src = img.src;
-        popupBox.appendChild(popupImage);
-        document.body.appendChild(popupBox)
-
-    })
-})
 
 
 /*const allLinks = document.querySelectorAll('.links a');
