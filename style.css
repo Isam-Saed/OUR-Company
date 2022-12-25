@@ -593,6 +593,22 @@ font-weight: bold;
                         font-size: 22px;
                         font-family:  Arial, sans-serif;
                     }
+
+                    .gallary .image-box{ 
+                        text-align: center;
+                        position: relative;
+                    }
+                    .gallary img{
+                        position: relative;
+                        width: 150px;
+                        height: 150px;
+                        padding: 3px;
+                        background-color: #f6f6f6;
+                        border: 0.5px solid #ccc;
+                        border-radius: 50px 3px;
+                        cursor: pointer;
+                       margin: 8px ;
+                    }
        }
 
        
