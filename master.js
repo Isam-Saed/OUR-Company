@@ -61,30 +61,25 @@ allSkills.forEach(skills =>{
 }
 get();*/
 
+ourGallary.forEach(img =>{
 
+    img.addEventListener('click',(e) =>{
+        let overLay = document.createElement('div');
+        overLay.className = 'popup-overlay';
 
-/*const allLinks = document.querySelectorAll('.links a');
-allLinks.forEach(link =>{
-link.addEventListener('click',(e)=>{
-    e.preventDefault();
-document.querySelector(e.target.dataset.section).scrollIntoView({
-    behavior: 'smooth'
+        document.body.appendChild(overLay);
+
+        let popupBox = document.createElement('div');
+        popupBox.className='popup-box';
+
+        let popupImage = document.createElement('img');
+        popupImage.src = img.src;
+        popupBox.appendChild(popupImage);
+        document.body.appendChild(popupBox)
+
+    })
 })
-})
-})*/
 
-let hiddinhH1 = document.querySelector('.introduction-text');
-
-let toggleBtn = document.querySelector('.toggle-menu');
-let links = document.querySelector('.links');
-
-toggleBtn.onclick=function(){
-   hiddinhH1.classList.toggle('hidden');
-    this.classList.toggle("menu-active");
-    links.classList.toggle("open");
-    hiddinhH1.classList.toggle('.visable');
-  
-}
 
 
 

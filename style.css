@@ -3,16 +3,17 @@
 }
 body{
     background-color: rgb(215, 233, 241);
-    font-family: Georgia, serif;
+    font-family: Sans-serif;
 }
 
 .one{border: none;
-height: 98vh;
+height: 100vh;
 width: 100%;
 position: relative;
-background: url('./986.jpg');
+background: url('./io.jpg' );
 background-size: cover;
 background-attachment: fixed;
+background-repeat: no-repeat;
 position: relative;
 color:rgb(211, 222, 233);
 box-shadow:0px 10px 190px var(--main-color) ;
@@ -146,7 +147,10 @@ font-weight: bold;
         overflow: hidden;
        width: 100%;
        }
-       
+       .con-about .fa-solid{
+        color: var(--main-color);
+        margin-right: 16px;
+       }
        .about-UStext{
         text-align: center;
         height: 100%;
@@ -157,6 +161,7 @@ font-weight: bold;
         line-height: 2.0;
     font-size: 20px;
     font-weight: bold;
+    color:#52504c;
         }
        
        .con-about img{
@@ -170,6 +175,7 @@ font-weight: bold;
         padding-bottom: 50px;   
      background-color: #161a1b11;
     }
+    .skills .fa-solid {color: var(--main-color);margin-right: 16px;}
     .skills h2{
         font-weight: bold;
         font-size: 30px;
@@ -223,6 +229,7 @@ font-weight: bold;
         margin-bottom: 200px;
         margin-top: 70px;
     }
+    .gallary .fa-solid{color: var(--main-color);margin-right: 16px;}
     .gallOverllr{
     position: absolute;
     width: 100%;
@@ -267,6 +274,7 @@ font-weight: bold;
         margin-bottom: 50px;
         
     }
+    .timeline .fa-solid{color: var(--main-color);margin-right: 16px;}
     .timeline .timeline-content{
         position: relative;
         overflow: hidden;
