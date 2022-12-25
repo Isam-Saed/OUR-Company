@@ -124,7 +124,7 @@ font-weight: bold;
             opacity: 1;
         }
 
-        .container .introduction-text{
+         .introduction-text{
             display:grid;
             text-align: center;
             width: 80%;
@@ -514,7 +514,7 @@ font-weight: bold;
 
 
     
-       @media (min-width: 400px) and (max-width: 575px){
+       @media (min-width: 300px) and (max-width: 575px){
         .con-about{
             display: block;
             padding: 30px;
@@ -584,6 +584,15 @@ font-weight: bold;
                         height: 230px;
                         margin:30px auto;
                       }
+                      .introduction-text{
+                        text-align: center;
+                        width: 90%;
+                        margin: auto;
+                        padding-top: 100px;
+                        font-weight: bold;
+                        font-size: 22px;
+                        font-family:  Arial, sans-serif;
+                    }
        }
 
        
