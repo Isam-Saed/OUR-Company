@@ -10,7 +10,7 @@ body{
 height: 98vh;
 width: 100%;
 position: relative;
-background: url('./13.jpg');
+background: url('./986.jpg');
 background-size: cover;
 background-attachment: fixed;
 position: relative;
@@ -442,8 +442,10 @@ font-weight: bold;
       }
     
  
-      .contact{
-        min-height: 600px;
+      
+    
+    .contact{
+        min-height: 500px;
         background-image: url('./06.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -455,7 +457,12 @@ font-weight: bold;
         color: var(--main-color);
         font-size: 40px;
         padding-top: 20px;
-        margin: 0 0 60px;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+        width: 80%;
+        margin-bottom: 100px;
+        margin-top: 20px;
     }
     .contact .overlay{
         position: absolute;
@@ -465,20 +472,69 @@ font-weight: bold;
         height: 100%;
         background-color: rgba(66, 64, 64, 0.7);
     }
-    .contact form{
+    form{
         overflow: hidden;
         margin: auto;
-        max-width: 900px;
+        max-width: 1100px;
+        display: flex;
+        justify-content:space-between;
     }
     form .left{
         float: left;
         width: 49%;
+        height: 300px;
+        width: 50%;
+        margin-right: 30px;
     }
     
-    form .right{
+    form .right{margin-left: 30px;
         float: right;
         width: 49%;
+        height: 300px;
+        width: 50%;
     }
+    .contact form input:not([type="submit"]),
+    .contact form textarea{
+        width:  95%;
+        display: block;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        margin: 7px auto;
+        background-color: rgba(66, 64, 64, 0.7);
+    }
+    .contact form input:not([type="submit"]):focus,
+    .contact form textarea:focus{
+        outline: 1px solid var(--main-color);
+        border: none;
+        background-color: rgb(245, 244, 244);
+    
+    }
+    .contact form input{
+        height: 50px;
+        width: 100%;
+    }
+    .contact form textarea{
+        height: 163px;
+        width: 100%;
+    }
+    .contact form input[type="submit"]{
+       height: 50px;
+        width:  100%;
+        border-color: transparent;
+        background-color: var(--main-color);
+        border-radius: 7px;
+       color: #d5e7ec;
+       padding-bottom: 3px;
+       font-weight: bold;
+       font-size: 22px;
+    }
+    .contact form input[type="submit"]:hover{
+       transition: .5s;
+       background-color: rgba(0, 183, 255, 0.486);
+     }
+     
+    
     
     form input:focus::-webkit-input-placeholder{
         opacity: 0;
@@ -490,8 +546,36 @@ font-weight: bold;
     }
     
     
+    .toggle-menu{
+        background: none;
+        border: none;
+        width: 40px;
+        cursor: pointer;
+        text-align: center;
+        padding-bottom: 6px;
+        position: relative;
+        right: 0;
+    }
+    .toggle-menu span{
+        display: block;
+        width: 100%;
+        background-color: rgb(214, 236, 241); 
+        height: 4px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+    }
     
-
+    .toggle-menu.menu-active:before{
+        content: '';
+        border: 10px;
+        border-style: solid;
+        border-color: transparent transparent rgb(214, 236, 241)  transparent;
+        position: absolute;
+        bottom: -4px;
+        left: 8px;
+    }
+    
+    
 
 
 
@@ -519,7 +603,7 @@ font-weight: bold;
             display: block;
             padding: 30px;
             margin: 60px auto;
-            height: 570px;
+            height: 670px;
             position: relative;
             justify-content: space-around;
             overflow: hidden;
@@ -608,6 +692,48 @@ font-weight: bold;
                         border-radius: 50px 3px;
                         cursor: pointer;
                        margin: 8px ;
+                    }
+                    .contact{
+                        min-height: 700px;
+                        background-image: url('./06.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                    }
+
+                    .contact .container h4{
+                        position: relative;
+                        z-index: 2;
+                        color: var(--main-color);
+                        font-size: 40px;
+                        padding-top: 10px;
+                        margin: auto;
+                        text-align: center;
+                        font-weight: bold;
+                        width: 100%;
+                        margin-bottom: 60px;
+                        margin-top: 20px;
+                    }
+                    form{
+                        overflow: hidden;
+                        margin: auto;
+                        max-width: 1100px;
+                        flex-direction: column;
+                    }
+                    form .left{
+                        
+                       
+                        height: 270px;
+                        width: 100%;
+                        margin:auto;
+                    }
+                    
+                    form .right{margin-left: 30px;
+                        
+                     
+                        height: 270px;
+                        width: 96%;
+                        margin: auto;
                     }
        }
 
