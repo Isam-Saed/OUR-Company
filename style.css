@@ -10,7 +10,7 @@ body{
 height: 100vh;
 width: 100%;
 position: relative;
-background: url('./io.jpg' );
+background: url('./13.jpg' );
 background-size: cover;
 background-attachment: fixed;
 background-repeat: no-repeat;
@@ -147,9 +147,10 @@ font-weight: bold;
         overflow: hidden;
        width: 100%;
        }
-       .con-about .fa-solid{
+       .con-about .bi{
         color: var(--main-color);
-        margin-right: 16px;
+        margin-right: 10px;
+        margin-top: -10px;
        }
        .about-UStext{
         text-align: center;
@@ -175,7 +176,11 @@ font-weight: bold;
         padding-bottom: 50px;   
      background-color: #161a1b11;
     }
-    .skills .fa-solid {color: var(--main-color);margin-right: 16px;}
+    .skills .bi {color: var(--main-color);
+        margin-right: 10px; font-weight: bold;
+        margin-top: -10px;
+        font-size: 29px;
+    }
     .skills h2{
         font-weight: bold;
         font-size: 30px;
@@ -229,7 +234,9 @@ font-weight: bold;
         margin-bottom: 200px;
         margin-top: 70px;
     }
-    .gallary .fa-solid{color: var(--main-color);margin-right: 16px;}
+    .gallary .bi{color: var(--main-color);margin-right: 10px;
+    margin-top: -10px;
+    }
     .gallOverllr{
     position: absolute;
     width: 100%;
@@ -271,8 +278,13 @@ font-weight: bold;
         padding-top: 50px;
         padding-bottom: 50px;
         margin-top: 50px;
+        margin-bottom: 50px; 
+    }
+    .timeline .timelineHONE{
+        margin: auto;
+        text-align: center;
         margin-bottom: 50px;
-        
+        color: var(--main-color);
     }
     .timeline .fa-solid{color: var(--main-color);margin-right: 16px;}
     .timeline .timeline-content{
@@ -348,8 +360,9 @@ font-weight: bold;
     }
     .timeline .timeline-content p{
         color: #666;
-        margin: 0;
+        margin: auto;
         line-height: 1.6;
+        text-align: center;
     }
     .clearfix{
         clear: both;
