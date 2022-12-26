@@ -1,6 +1,6 @@
 let landingPage = document.querySelector('.landing-page');
 let Setiing1 =document.querySelector('.setting-box');
-let SettingIcon = document.querySelector('.setting-box .fa-solid');
+let SettingIcon = document.querySelector('.setting-box .bi');
 let imgArray =['01.avif','02.avif','03.avif','04.avif','06.avif','16.jpg'];
 const selectColor = document.querySelectorAll('.colors-list li');
 let main_color = localStorage.getItem("color_option");
@@ -9,7 +9,7 @@ let ourGallary =document.querySelectorAll('.gallary img');
 
 
 
-document.querySelector('.toggle-setting .fa-solid').onclick = function(){
+document.querySelector('.toggle-setting .bi').onclick = function(){
     this.classList.toggle("fa-spin");
     document.querySelector('.setting-box').classList.toggle("open");
     }

@@ -10,7 +10,7 @@ body{
 height: 100vh;
 width: 100%;
 position: relative;
-background: url('./13.jpg' );
+background: url('./io.jpg' );
 background-size: cover;
 background-attachment: fixed;
 background-repeat: no-repeat;
@@ -73,7 +73,7 @@ font-weight: bold;
     height: 30px;
     width: 36px;
     }
-    .fa-solid{
+    .toggle-setting .bi{
         padding: 6px;
         height: 30px;
         width: 36px;
@@ -594,9 +594,21 @@ font-weight: bold;
         position: absolute;
         bottom: -4px;
         left: 8px;
+
     }
     
     
+
+
+    
+
+
+
+
+
+
+
+
 
 
 
@@ -756,6 +768,7 @@ font-weight: bold;
                         width: 96%;
                         margin: auto;
                     }
+                    
        }
 
        
